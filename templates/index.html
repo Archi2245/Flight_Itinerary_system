@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyPilot - Flight Itinerary Planner</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <img src="/static/airplane.png" alt="Airplane" class="logo">
+        <h1>SkyPilot</h1>
+    </header>
+    <main>
+        <h2>Plan Your Flight</h2>
+        <form method="POST">
+            <label for="departure">Departure City:</label>
+            <input type="text" name="departure" id="departure" required><br>
+
+            <label for="arrival">Arrival City:</label>
+            <input type="text" name="arrival" id="arrival" required><br>
+
+            <label for="algorithm">Select Algorithm:</label>
+            <select name="algorithm" id="algorithm" required>
+                <option value="Dijkstra">Dijkstra</option>
+                <option value="TSP">Traveling Salesman Problem</option>
+            </select><br>
+
+            <input type="submit" value="Find Route">
+        </form>
+    </main>
+    <footer>
+        <p>© 2024 SkyPilot - Your Trusted Flight Planner</p>
+    </footer>
+</body>
+</html>
